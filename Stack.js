@@ -29,4 +29,15 @@ class Stack {
         return this;
 
     }
+    // pop() method
+    pop(value) {
+        // edge cases for stack is empty
+        if (this.length === 0) return false
+        let temp = this.top;
+        this.top = this.top.next
+        temp.next = null
+        this.length--
+        return temp;
+
+    }
 }

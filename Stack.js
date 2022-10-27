@@ -41,3 +41,9 @@ class Stack {
 
     }
 }
+let myStack = new Stack(11)
+
+myStack.push(3)
+myStack.push(4)
+myStack.pop()
+myStack
